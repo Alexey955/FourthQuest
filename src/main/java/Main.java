@@ -7,10 +7,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        String filePath = "src/main/resources/FileInput.txt";
-
         BankCounter bankCounter = new BankCounter();
-        List<String> result = bankCounter.fetchTimeMaxPeople(filePath);
+        List<String> result = bankCounter.fetchTimeMaxPeople(args[0]);
 
         result.forEach(System.out::println);
     }
